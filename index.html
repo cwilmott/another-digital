@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Another Digital Is Possible</title>
+    <style>
+      @font-face {
+        font-family: "Bauhaus Regular";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("Bauhaus Regular"),
+          url("images/bauhaus-webfont/BauhausRegular.woff") format("woff");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Bauhaus Italic";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("Bauhaus Italic"),
+          url("images/bauhaus-webfont/BauhausItalic.woff") format("woff");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Bauhaus Bold";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("Bauhaus Bold"),
+          url("images/bauhaus-webfont/BauhausBold.woff") format("woff");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Bauhaus Bold Italic";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("Bauhaus Bold Italic"),
+          url("images/bauhaus-webfont/BauhausBoldItalic.woff") format("woff");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "ITC Bauhaus Demi";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("ITC Bauhaus Demi"),
+          url("images/bauhaus-outline/ITC-Bauhaus-Demi.woff2") format("woff2");
+        font-display: swap;
+      }
+
+      :root {
+        --bg: #f3efe5;
+        --text: #111111;
+        --line: #191919;
+        --muted: #5b5b5b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Verdana, Tahoma, "Segoe UI", sans-serif;
+        line-height: 1.55;
+      }
+
+      .page {
+        width: min(100%, 1060px);
+        margin: 0 auto;
+        padding: 1.1rem;
+      }
+
+      .content-box {
+        border: 1px solid var(--line);
+        border-top: 0;
+        padding: 1rem;
+      }
+
+      .masthead {
+        border: 1px solid var(--line);
+        padding: 0.65rem 0.85rem;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 0.75rem;
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .masthead .issue {
+        color: var(--muted);
+      }
+
+      .hero {
+        margin-top: 0;
+        border: 1px solid var(--line);
+        width: 100%;
+        height: 100px;
+        background-image: url("images/Another%20digital%20is%20possible.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      h1 {
+        margin: 1.15rem 0 0;
+        font-size: clamp(2.3rem, 8vw, 6rem);
+        line-height: 0.92;
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-family: "ITC Bauhaus Demi", "Bauhaus Bold", "Bauhaus Regular", "ITC Bauhaus", "Bauhaus 93", Futura, "Trebuchet MS", sans-serif;
+      }
+
+      .subtitle {
+        margin: 0.35rem 0 1rem;
+        font-size: 0.82rem;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .grid {
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        display: grid;
+        grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+      }
+
+      .grid + .grid {
+        border-top: 0;
+      }
+
+      .label,
+      .body {
+        padding: 0.9rem;
+      }
+
+      .label {
+        border-right: 1px solid var(--line);
+        font-size: 0.8rem;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .label a {
+        margin-top: auto;
+        padding-top: 0.7rem;
+        color: inherit;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.15em;
+      }
+
+      .body p {
+        margin: 0;
+        max-width: 68ch;
+        font-size: 0.8rem;
+      }
+
+      footer {
+        margin-top: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      footer a {
+        color: inherit;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.15em;
+      }
+
+      @media (max-width: 760px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .label {
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+
+        h1 {
+          line-height: 0.98;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" aria-label="Top banner header"></section>
+
+      <div class="content-box">
+        <header class="masthead">
+          <div>New York City</div>
+          <div class="issue">Feb 13-15, 2027</div>
+        </header>
+
+        <h1>Another Digital Is Possible</h1>
+        <p class="subtitle">Rethinking Digital Geographies</p>
+
+        <section class="grid" aria-label="Project description">
+          <div class="label">
+            <span>AAG SF<br />22-23 March 2026</span>
+            <a href="script-destroy.html">script.Destroy() CFP →</a>
+          </div>
+          <div class="body">
+            <p>
+              <strong>script.Destroy()</strong> invites attendees to help lay the ground work for "another" digital geographies conference, one that centers the work of early-career scholars and practitioners, theorists and activists, thinkers and creators. It emphasizes the digital as a site of critical inquiry and creative practice, rather than a tool for reproducing existing hierarchies and power structures. script.Destroy() calls into question not just how digital geographies are done, but who gets to do them. Join us for an open conversation about building new structures of collaboration, dialogue and critique in preparation for AAG NYC 2027.
+            </p>
+          </div>
+        </section>
+        <section class="grid" aria-label="Project description">
+          <div class="label">
+            <span>AAG NYC<br />13-15 Feb 2027</span>
+            <a href="digital-geographies-otherwise.html">Digital Geographies, Otherwise? CFP →</a>
+          </div>
+          <div class="body">
+            <p>
+              <strong>Digital Geographies, Otherwise?</strong> is a three-day conference that will take place in New York City on February 3-5, 2027. It will feature a mix of keynote speakers, panel discussions, workshops, and interactive sessions that explore the theme of "Another Digital Is Possible." The conference will bring together scholars, practitioners, and activists from a variety of disciplines to discuss the critical role of digital technologies in creating, perpetuating and resisting oppressive and unequal power structures. The conference will also provide opportunities for building solidarity and community among attendees.
+            </p>
+          </div>
+        </section>
+
+        <footer>
+          <a href="mailto:emma.fraser@berkeley.edu">email us</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSca-xVevd94fKAfmHZABakNI6WugM_Du98uh73PoILYRS_wlw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">sign up here ↗</a>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
