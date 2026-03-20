@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>script.Destroy() — Schedule</title>
+    <style>
+      @font-face {
+        font-family: "Bauhaus Regular";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("Bauhaus Regular"),
+          url("images/bauhaus-webfont/BauhausRegular.woff") format("woff");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Bauhaus Italic";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("Bauhaus Italic"),
+          url("images/bauhaus-webfont/BauhausItalic.woff") format("woff");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Bauhaus Bold";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("Bauhaus Bold"),
+          url("images/bauhaus-webfont/BauhausBold.woff") format("woff");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Bauhaus Bold Italic";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("Bauhaus Bold Italic"),
+          url("images/bauhaus-webfont/BauhausBoldItalic.woff") format("woff");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "ITC Bauhaus Demi";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("ITC Bauhaus Demi"),
+          url("images/bauhaus-outline/ITC-Bauhaus-Demi.woff2") format("woff2");
+        font-display: swap;
+      }
+
+      :root {
+        --bg: #f3efe5;
+        --text: #111111;
+        --line: #191919;
+        --muted: #5b5b5b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Verdana, Tahoma, "Segoe UI", sans-serif;
+        line-height: 1.55;
+      }
+
+      .page {
+        width: min(100%, 1060px);
+        margin: 0 auto;
+        padding: 1.1rem;
+      }
+
+      .content-box {
+        border: 1px solid var(--line);
+        border-top: 0;
+        padding: 1rem;
+      }
+
+      .hero {
+        margin-top: 0;
+        border: 1px solid var(--line);
+        width: 100%;
+        height: 100px;
+        background-image: url("images/Another%20digital%20is%20possible.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      h1 {
+        margin: 1.15rem 0 0;
+        font-size: clamp(1.7rem, 5.5vw, 3.6rem);
+        line-height: 0.92;
+        letter-spacing: 0.015em;
+        font-weight: normal;
+        font-family: "ITC Bauhaus Demi", "Bauhaus Bold", "Bauhaus Regular", "ITC Bauhaus", "Bauhaus 93", Futura, "Trebuchet MS", sans-serif;
+      }
+
+      .subtitle {
+        margin: 0.95rem 0 1rem;
+        font-size: 0.82rem;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .embed-section {
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .embed-section iframe {
+        display: block;
+        width: 100%;
+        height: 80vh;
+        border: none;
+      }
+
+      footer {
+        margin-top: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      footer a {
+        color: inherit;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.15em;
+      }
+
+      @media (max-width: 760px) {
+        h1 {
+          line-height: 0.98;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" aria-label="Top banner header"></section>
+
+      <div class="content-box">
+        <h1>script.Destroy()</h1>
+        <p class="subtitle">schedule — AAG SF 22-23 March 2026</p>
+
+        <section class="embed-section" aria-label="Schedule">
+          <iframe
+            src="https://docs.google.com/document/d/e/2PACX-1vTxj0EBnN01d_fsbAXaTOpK0Ga-gstj9Q8IBMjVe61-Azo4RvAlA4bJuVfhj8jQtS8MlR2Xjxl6y_0q/pub?embedded=true" 
+            title="script.Destroy() Schedule"
+          ></iframe>
+        </section>
+
+        <footer>
+          <a href="script-destroy.html">← back to script.Destroy()</a>
+          <a href="index.html">main page</a>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
